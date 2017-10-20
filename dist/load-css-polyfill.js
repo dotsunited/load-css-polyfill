@@ -1,4 +1,4 @@
-/*! load-css-polyfill v0.1.0 - Copyright 2017 Dots United GmbH - Licensed MIT */
+/*! load-css-polyfill v1.0.0 - Copyright 2017 Dots United GmbH - Licensed MIT */
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
 	typeof define === 'function' && define.amd ? define(factory) :

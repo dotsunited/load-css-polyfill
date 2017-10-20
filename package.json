@@ -1,6 +1,6 @@
 {
   "name": "@dotsunited/load-css-polyfill",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A simple polyfill for asynchronously loading non-critical CSS using link[rel=preload].",
   "author": "Dots United GmbH",
   "license": "MIT",
