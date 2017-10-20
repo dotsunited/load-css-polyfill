@@ -24,11 +24,15 @@ Installation
 
 ### npm
 
-`$ npm install load-css-polyfill --save`
+```bash
+$ npm install load-css-polyfill --save
+```
 
 ### Yarn
 
-`$ yarn add load-css-polyfill`
+```bash
+$ yarn add load-css-polyfill
+```
 
 Usage
 --
