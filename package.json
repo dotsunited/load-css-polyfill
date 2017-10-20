@@ -1,0 +1,47 @@
+{
+  "name": "@dotsunited/load-css-polyfill",
+  "version": "0.1.0",
+  "description": "A simple polyfill for asynchronously loading non-critical CSS using link[rel=preload].",
+  "author": "Dots United GmbH",
+  "license": "MIT",
+  "main": "dist/load-css-polyfill.js",
+  "module": "dist/load-css-polyfill.mjs",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "nyc": {
+    "reporter": [
+      "html",
+      "lcov",
+      "text"
+    ]
+  },
+  "scripts": {
+    "build": "rimraf dist/* && rollup -c",
+    "dev": "rimraf dist/* && rollup -c -w",
+    "test": "nyc ava"
+  },
+  "devDependencies": {
+    "ava": "^0.22.0",
+    "jsdom": "^11.3.0",
+    "nyc": "^11.2.1",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.50.0",
+    "rollup-plugin-buble": "^0.16.0"
+  },
+  "repository": "https://github.com/dotsunited/load-css-polyfill.git",
+  "bugs": {
+    "url": "https://github.com/dotsunited/load-css-polyfill/issues"
+  },
+  "homepage": "https://github.com/dotsunited/load-css-polyfill#readme",
+  "keywords": [
+    "html",
+    "css",
+    "stylesheet",
+    "link",
+    "rel",
+    "preload",
+    "polyfill"
+  ]
+}

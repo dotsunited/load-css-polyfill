@@ -1,0 +1,31 @@
+language: node_js
+
+node_js:
+  - 8
+  - 6
+  - 4
+
+env:
+  - FRESH_DEPS=false
+  - FRESH_DEPS=true
+
+matrix:
+  exclude:
+    - node_js: 6
+      env: FRESH_DEPS=true
+    - node_js: 4
+      env: FRESH_DEPS=true
+
+cache:
+  directories:
+    - $HOME/.npm
+
+before_install:
+  - npm i -g npm
+  - npm i codecov
+  - npm --version
+
+install:
+  - if [[ ${FRESH_DEPS} == "true" ]]; then npm install --no-shrinkwrap --prefer-online; else npm install --prefer-offline; fi
+
+after_success: ./node_modules/.bin/codecov --file=./coverage/lcov.info
