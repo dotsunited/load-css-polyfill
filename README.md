@@ -25,13 +25,13 @@ Installation
 ### npm
 
 ```bash
-$ npm install load-css-polyfill --save
+$ npm install @dotsunited/load-css-polyfill --save
 ```
 
 ### Yarn
 
 ```bash
-$ yarn add load-css-polyfill
+$ yarn add @dotsunited/load-css-polyfill
 ```
 
 Usage
@@ -40,15 +40,9 @@ Usage
 Import the package and invoke the `polyfill()`function.
 
 ```js
-import polyfill from 'load-css-polyfill';
+import polyfill from '@dotsunited/load-css-polyfill';
 
 polyfill();
-```
-
-or
-
-```js
-require('load-css-polyfill').polyfill();
 ```
 
 > Please note, that you should inline the script in your `<head>`.
