@@ -53,7 +53,7 @@ Credits
 This package is based on the technique 
 [developed](https://github.com/filamentgroup/loadCSS/issues/59) by 
 [Scott Jehl](https://github.com/scottjehl) as part of the 
-[loadCSS](https://github.com/filamentgroup/loadCSS/issues/59) library.
+[loadCSS](https://github.com/filamentgroup/loadCSS) library.
 
 License
 --
