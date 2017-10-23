@@ -2,7 +2,7 @@ load-css-polyfill
 ==
 
 A simple polyfill for asynchronously loading non-critical CSS using
-[`link[rel=preload][as=style]`](https://w3c.github.io/preload/).
+[`link[rel=preload]`](https://w3c.github.io/preload/).
 
 Introduction
 --
