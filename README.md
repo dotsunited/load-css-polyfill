@@ -25,13 +25,13 @@ Installation
 ### npm
 
 ```bash
-$ npm install @dotsunited/load-css-polyfill --save
+npm install @dotsunited/load-css-polyfill --save
 ```
 
 ### Yarn
 
 ```bash
-$ yarn add @dotsunited/load-css-polyfill
+yarn add @dotsunited/load-css-polyfill
 ```
 
 Usage
