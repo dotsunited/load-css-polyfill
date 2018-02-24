@@ -3,7 +3,7 @@ import pkg from './package.json';
 
 const banner =
     '/*! load-css-polyfill v' + pkg.version +
-    ' - Copyright ' + new Date().getFullYear() + ' ' + pkg.author + ' - Licensed ' + pkg.license + ' */'
+    ' - Copyright 2017-' + new Date().getFullYear() + ' ' + pkg.author + ' - Licensed ' + pkg.license + ' */'
 ;
 
 export default [

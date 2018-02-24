@@ -1,4 +1,4 @@
-/*! load-css-polyfill v1.0.0 - Copyright 2017 Dots United GmbH - Licensed MIT */
+/*! load-css-polyfill v1.0.0 - Copyright 2017-2018 Dots United GmbH - Licensed MIT */
 function supports(win) {
     try {
         return (win || window).document.createElement('link').relList.supports('preload');
