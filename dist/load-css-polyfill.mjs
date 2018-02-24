@@ -14,9 +14,7 @@ function shim(win) {
     function run() {
         var links = doc.querySelectorAll('link[rel="preload"][as="style"]');
 
-        var loop = function ( i, l ) {
-            var link = links[i];
-
+        [].forEach.call(links, function (link) {
             link.rel = '';
 
             var newLink = doc.createElement('link');
@@ -33,9 +31,7 @@ function shim(win) {
             newLink.addEventListener('load', finish);
 
             link.parentNode.insertBefore(newLink, link.nextSibling || link);
-        };
-
-        for (var i = 0, l = links.length; i < l; i++) loop( i, l );
+        });
     }
 
     run();

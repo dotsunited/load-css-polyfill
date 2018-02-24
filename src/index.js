@@ -13,9 +13,7 @@ function shim(win) {
     function run() {
         const links = doc.querySelectorAll('link[rel="preload"][as="style"]');
 
-        for (let i = 0, l = links.length; i < l; i++) {
-            const link = links[i];
-
+        [].forEach.call(links, (link) => {
             link.rel = '';
 
             const newLink = doc.createElement('link');
@@ -32,7 +30,7 @@ function shim(win) {
             newLink.addEventListener('load', finish);
 
             link.parentNode.insertBefore(newLink, link.nextSibling || link);
-        }
+        });
     }
 
     run();
