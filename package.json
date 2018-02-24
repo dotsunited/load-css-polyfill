@@ -7,8 +7,7 @@
   "main": "dist/load-css-polyfill.js",
   "module": "dist/load-css-polyfill.mjs",
   "files": [
-    "dist",
-    "README.md"
+    "dist"
   ],
   "nyc": {
     "reporter": [
