@@ -9,7 +9,7 @@ const banner =
 export default [
     {
         banner: banner,
-        input: 'src/api.js',
+        input: 'src/index.js',
         output: {
             format: 'umd',
             file: 'dist/load-css-polyfill.js',
@@ -23,7 +23,7 @@ export default [
     },
     {
         banner: banner,
-        input: 'src/api.js',
+        input: 'src/index.js',
         output: {
             format: 'es',
             file: 'dist/load-css-polyfill.mjs'
