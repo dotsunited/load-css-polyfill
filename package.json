@@ -23,9 +23,9 @@
     "test": "nyc ava"
   },
   "devDependencies": {
-    "ava": "^0.24.0",
-    "jsdom": "^11.9.0",
-    "nyc": "^11.7.1",
+    "ava": "^0.25.0",
+    "jsdom": "^11.11.0",
+    "nyc": "^11.9.0",
     "rimraf": "^2.6.2",
     "rollup": "^0.50.1",
     "rollup-plugin-buble": "^0.16.0"
