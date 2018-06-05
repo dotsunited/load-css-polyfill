@@ -33,5 +33,32 @@ export default [
                 exclude: ['node_modules/**']
             })
         ]
+    },
+    {
+        banner: banner,
+        input: 'src/auto.js',
+        output: {
+            format: 'umd',
+            file: 'dist/load-css-polyfill.auto.js',
+            name: 'loadCSSPolyfill'
+        },
+        plugins: [
+            buble({
+                exclude: ['node_modules/**']
+            })
+        ]
+    },
+    {
+        banner: banner,
+        input: 'src/auto.js',
+        output: {
+            format: 'es',
+            file: 'dist/load-css-polyfill.auto.mjs'
+        },
+        plugins: [
+            buble({
+                exclude: ['node_modules/**']
+            })
+        ]
     }
 ];
